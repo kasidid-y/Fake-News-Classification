@@ -1,8 +1,8 @@
 # Fake News Classification 
 
-build a a text classification model using Logistic Regression and evalute its performance.
+build a text classification model using Logistic Regression and evalute its performance.
 
-**Tools and Environment in this project**
+# Tools and Environment in this project
 
 |    Tool/Environment	     |  Purpose                                 |                                                                              
 |--------------------------|-----------------------------------------|
@@ -16,9 +16,7 @@ build a a text classification model using Logistic Regression and evalute its pe
 
  Dataset resource : [https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification)
 
-**Key Steps**
-
-Key Steps
+# Key Steps
 
 - Text Preprocessing:
 
@@ -49,3 +47,17 @@ Key Steps
     Evaluate the model using accuracy and a classification report.
 
     Create a confusion matrix to visualize the model's performance.
+
+# Model Performance
+
+|Confustion matrix | Actual Fake News | Autual Real News |   
+|----------------|------------------|------------------|
+| Pred Fake News | 731              | 33               |  
+| Pred Real News | 35               | 825              |  
+
+|       Measurement             |                      Result                   |                                                                              
+|--------------------------|-----------------------------------------|
+| Accuray	                  | 0.958                           |
+| Precision                  | 0.96                          |
+| Recall	                  | 0.96                           |
+| f1-score	                  | 0.96                       |
