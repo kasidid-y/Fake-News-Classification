@@ -41,13 +41,13 @@ build a text classification model using Logistic Regression and Naive Bayes mode
 
 **Confusion Matrix of Logistic Regression Model**
 
-[confusionMatrix_lr](/assest/lr_cm.png)
+![confusionMatrix_lr](/assets/lr_cm.png)
 
 **Confusion Matrix of Naive Bayes Model**
 
-[confusionMatrix_nb](/assets/nb_cm.png)
+![confusionMatrix_nb](/assets/nb_cm.png)
 
 **Testing Both model with new article**
 
-[test](/assets/testmodel.png)
+![test](/assets/testmodel.png)
 
