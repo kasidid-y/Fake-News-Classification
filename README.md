@@ -1,6 +1,6 @@
 # Fake News Classification 
 
-build a text classification model using Logistic Regression and evalute its performance.
+build a text classification model using Logistic Regression and Naive Bayes model and evalute its performance.
 
 # Tools and Environment in this project
 
