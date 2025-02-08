@@ -49,5 +49,8 @@ build a text classification model using Logistic Regression and Naive Bayes mode
 
 **Testing Both model with new article**
 
+  Use the models to predict article outside of train and test dataset 
+  
 ![test](/assets/testmodel.png)
 
+[link to the article: https://www.theguardian.com/commentisfree/2025/feb/08/donald-trump-media-coverage](https://www.theguardian.com/commentisfree/2025/feb/08/donald-trump-media-coverage)
