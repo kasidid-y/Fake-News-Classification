@@ -12,7 +12,7 @@ build a text classification model using Logistic Regression and evalute its perf
 |scikit-learn	                                    | Machine learning tasks (feature extraction, model training, evaluation). |
 |Pandas	                                          | Data manipulation and analysis.                                                |     
 |re                                               | Regular expressions for text cleaning.                                             |
-|Prepared text dataset of news article from Kaggle           |Datset (a news articel with 35,028 real and 37,106 fake news) for training and testing model                                         |
+|Prepared text dataset of news article from Kaggle           |Datset for training and testing model                                         |
 
  Dataset resource : [https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification)
 
@@ -20,44 +20,34 @@ build a text classification model using Logistic Regression and evalute its perf
 
 - Text Preprocessing:
 
-  Clean the text data (e.g., remove punctuation, stopwords, etc.).
+  Clean the text data using re(Regular expression) to remove special characters, download and import stopwords corpus from ntlk to remove any stopwords in text and lemmatizing words using WordNetLemmatizer from nltk.
 
-  Tokenize the text into words or sentences using NLTK's word_tokenize.
+- Feature Extraction
 
-- Custom Tokenization:
+  Convert the text data into numerical features with TF-IDF Vectorization technique using TfidfVectorizer from sckit-learn. Building a set of unique words and paired words of a maximum of 5000 words 
 
-    Define a custom function (custom_word_tokenize) to tokenize text and remove stopwords.
+- Split Data for Train and Test:
 
-- Vectorization:
-
-    Convert the tokenized text into numerical features using TF-IDF Vectorization (TfidfVectorizer).
-
-- Train-Test Split:
-
-    Split the dataset into training and testing sets using train_test_split.
+    Split the dataset into 5 set of training and testing sets using StratifiedKFold from scikit-learn.
 
 - Model Training:
 
-    Train a Logistic Regression model on the training data.
+    Train a Logistic Regression model and Naive Bayes model on the training dataset using LogisticRegression and MultinomialNB from scikit-learn.
+    
 
 - Model Evaluation:
+ 
+    Evaluate the model using accuracy, precision, recall_score, f1_score and confusion matrix.
 
-    Predict labels for the test data.
+**Confusion Matrix of Logistic Regression Model**
 
-    Evaluate the model using accuracy and a classification report.
+[confusionMatrix_lr](/assest/lr_cm.png)
 
-    Create a confusion matrix to visualize the model's performance.
+**Confusion Matrix of Naive Bayes Model**
 
-# Model Performance
+[confusionMatrix_nb](/assets/nb_cm.png)
 
-|Confustion matrix | Actual Fake News | Autual Real News |   
-|----------------|------------------|------------------|
-| Pred Fake News | 731              | 33               |  
-| Pred Real News | 35               | 825              |  
+**Testing Both model with new article**
 
-|       Measurement             |                      Result                   |                                                                              
-|--------------------------|-----------------------------------------|
-| Accuray	                  | 0.958                           |
-| Precision                  | 0.96                          |
-| Recall	                  | 0.96                           |
-| f1-score	                  | 0.96                       |
+[test](/assets/testmodel.png)
+
